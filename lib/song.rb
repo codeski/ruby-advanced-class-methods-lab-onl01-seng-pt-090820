@@ -61,7 +61,6 @@ class Song
     song.save
     song
   end
-  end
   
   def self.create_from_filename
   end
