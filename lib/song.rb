@@ -51,10 +51,9 @@ class Song
   end
 
   def self.new_from_filename(file)
-    file.collect do |file|
       data = file.split(" _ ")
-      artist = e[0] 
-      name = e[1]
+      artist = data[0] 
+      name = data[1]
       binding.pry
       song = self.new 
       song.name = name
