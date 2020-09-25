@@ -52,14 +52,15 @@ class Song
 
   def self.new_from_filename(file)
     file.collect do |file|
-      binding.pry
+      
     data = file.split(" _ ")
     artist = data[0] 
-    name = data[2]
+    name = data[2].delete_if(.mp3)
     
     song = self.new 
     song.name = name
     song.artist = artist
+    song.save
     song
   end
   end
