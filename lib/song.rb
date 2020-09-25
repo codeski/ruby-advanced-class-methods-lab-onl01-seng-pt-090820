@@ -51,7 +51,8 @@ class Song
   end
 
   def self.new_from_filename(file)
-    file.split(" - "||".").collect do |data|
+    new = file.split(" - "||".")
+    new.collect do |data|
       binding.pry
     name = data[0]
     artist = data[1] 
