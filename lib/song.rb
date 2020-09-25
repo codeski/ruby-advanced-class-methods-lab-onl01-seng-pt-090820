@@ -54,7 +54,7 @@ class Song
       data = file.split(" - ")
       artist = data[0] 
       name = data[1]
-      binding.pry
+      # binding.pry
       song = self.new 
       song.name = name
       song.artist_name = artist
