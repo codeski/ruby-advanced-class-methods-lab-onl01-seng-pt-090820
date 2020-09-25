@@ -51,7 +51,7 @@ class Song
   end
 
   def self.new_from_filename(file)
-    new = file.split("-"||".")
+    new = file.split("-")
     new.collect do |data|
       binding.pry
     name = data[0]
