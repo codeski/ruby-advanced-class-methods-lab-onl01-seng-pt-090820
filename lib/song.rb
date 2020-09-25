@@ -55,7 +55,7 @@ class Song
       
     data = file.split(" _ ")
     artist = data[0] 
-    name = data[2].delete_if(.mp3)
+    name = data[2].delete_if(".mp3")
     
     song = self.new 
     song.name = name
