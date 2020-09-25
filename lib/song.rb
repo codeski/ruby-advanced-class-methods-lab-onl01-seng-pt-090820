@@ -53,14 +53,15 @@ class Song
   def self.new_from_filename(file)
     data = file.split(" _ ")
     data.each do |e|
-    artist = e[0] 
-    name = e[1]
-    binding.pry
-    song = self.new 
-    song.name = name
-    song.artist_name = artist
-    song.save
-    song
+      artist = e[0] 
+      name = e[1]
+      binding.pry
+      song = self.new 
+      song.name = name
+      song.artist_name = artist
+      song.save
+      song
+    end
   end
   
   def self.create_from_filename
